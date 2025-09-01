@@ -32,37 +32,7 @@ student-performance-calculator/
 
 ---
 
-## ⚙️ Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/student-performance-calculator.git
-   cd student-performance-calculator
-   ```
 
-2. Import the database:
-   - Open **phpMyAdmin** → Create a new database `studentdb`  
-   - Import `db.sql` file  
-
-   OR use CLI:
-   ```bash
-   mysql -u root -p < db.sql
-   ```
-
-3. Update database credentials in `config.php` if needed:
-   ```php
-   $servername = "localhost";
-   $username = "root";
-   $password = "";
-   $dbname = "studentdb";
-   ```
-
-4. Start your local server (XAMPP / WAMP / LAMP).  
-   Place this project in the `htdocs` (or www) folder.  
-
-5. Open in browser:
-   ```
-   http://localhost/student-performance-calculator
-   ```
 
 ---
 
@@ -73,17 +43,6 @@ student-performance-calculator/
 
 ---
 
-## 📸 Screenshots
-(Add screenshots of your UI here)
-
----
-
-## 🤝 Contributing
-Contributions are welcome!  
-1. Fork the repo  
-2. Create a new branch  
-3. Make changes and commit  
-4. Submit a pull request  
 
 ---
 
