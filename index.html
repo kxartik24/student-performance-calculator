@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Performance Calculator</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Student Performance Calculator</h1>
+
+    <form id="calc-form">
+      <div class="field">
+        <label for="name">Student Name</label>
+        <input type="text" id="name" placeholder="Enter student name" required />
+      </div>
+
+      <div class="field inline">
+        <label for="maxMarks">Max Marks per Subject</label>
+        <input type="number" id="maxMarks" value="100" min="1" />
+      </div>
+
+      <div class="subjects">
+        <div class="subjects-header">
+          <h2>Subjects</h2>
+          <div>
+            <button type="button" id="addSubject" class="btn">+ Add Subject</button>
+            <button type="button" id="removeSubject" class="btn btn-secondary">- Remove</button>
+          </div>
+        </div>
+        <div id="subjectsList" class="subjects-list"></div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Calculate & Save</button>
+    </form>
+
+    <section id="result" class="result hidden"></section>
+
+    <section>
+      <h2>Saved Results</h2>
+      <table id="resultsTable">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Total</th>
+            <th>Percentage</th>
+            <th>Grade</th>
+            <th>Remark</th>
+            <th>Created</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
